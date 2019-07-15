@@ -1,2 +1,1 @@
-# suyashsingh.github.io
-Personal Website
+# [suyashsingh.github.io](https://suyashsingh.github.io)
