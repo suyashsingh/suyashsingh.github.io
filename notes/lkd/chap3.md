@@ -20,11 +20,11 @@ nel.
   + exit()
   + wait4() system call - special zombie state
   + task
-10.
+10. Task
   + What is a task list
   + Definition of process descriptor
   + infor contained in the process descriptor
-11.
+11. Task related structures
   + Storage of struct `task_struct` at end / bottom of kernel stack. Why?
   + struct `thread_info` - why?
 12. `pid_t`, its storage in process descriptor
