@@ -9,3 +9,4 @@ basically `work in progress`.
 ## 1. Linux Kernel Development
   1. [Chapter 1](/notes/lkd/chap1)
   2. [Chapter 2](/notes/lkd/chap2)
+  3. [Chapter 3](/notes/lkd/chap3)
