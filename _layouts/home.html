@@ -79,7 +79,7 @@
           {% assign mypages = site.pages | sort: "order" %}
           {% for page in mypages %}
             <li class="list-group-item">
-              <a href="{{ page.url | absolute_url }}" debug="{{ page.path }}">{{ page.title }}</a>
+              <a href="{{ page.url | absolute_url }}">{{ page.title }}</a>
             </li>
           {% endfor %}
         </ul>
