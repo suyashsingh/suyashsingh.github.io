@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top blue-header-bg" >
+	<a class="navbar-brand" href="#"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+			{% assign mypages = site.pages | sort: "order" %}
+			{% for page in mypages %}
+			<li class="nav-itemm">
+				<a class="nav-link text-white font-weight-bold" href="{{ page.url | absolute_url }}">{{ page.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</nav>
