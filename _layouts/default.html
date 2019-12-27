@@ -1,0 +1,92 @@
+<!-- Template for pages other than landing page -->
+<!doctype html>
+<html lang="en">
+<head>
+
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css" | relative_url }}">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+<title>{{ page.title }} | {{ site.title }}</title>
+
+<style>
+  /* Sticky Footer Classes */
+  html,
+  body {
+    height: 100%;
+  }
+
+  #page-content {
+    flex: 1 0 auto;
+  }
+
+  #sticky-footer {
+    flex-shrink: none;
+  }
+
+  /* Other customizations */
+  .blue-header-bg {
+    background-image: url("{{ "/assets/images/header-bg.jpg" | relative_url }}");
+  }
+
+  .navbar {
+    border-bottom:1px solid #FFF;
+  }
+</style>
+
+</head>
+
+<body>
+  <!-- Dynamically generated navigation Bar -->
+  {% include navigation.html %}
+  <!-- ./Dynamically generated navigation Bar -->
+
+  <!-- Jumbotron -->
+  <div class="jumbotron text-center blue-header-bg" style="margin-top:30px; font-family: 'Permanent Marker', cursive;">
+  	<h1 class="text-light" style="font-size: 60px; ">Suyash Singh</h1> 
+  	<h3 class="text-light">Embedded bits & bytes!</h3>
+  </div>
+  <!-- ./Jumbotron -->
+
+  <!-- Page Container -->
+  <div class="container">
+    <div class="row" style="font-family: 'Roboto', sans-serif;">
+      <div class="col-md-12">
+        <!-- Page title  -->
+        <h1>{{ page.title }}</h1>
+        <!-- Page Content -->
+        <p>
+          {{ content }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- ./Page Container -->
+  
+  <!-- Page Footer -->
+  <footer id="sticky-footer" class="py-4">
+    <div class="container text-center">
+      <small>Made with &#x2764; by Suyash | </small>
+      <span>
+        <a href="{{ site.github }}" target="_blank" class="fa fa-github"></a>
+        <a href="{{ site.linkedin }}" target="_blank" class="fa fa-linkedin"></a>
+      </span>
+    </div>
+  </footer>
+  <!-- ./Page Footer -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="{{ "/assets/js/jquery-3.3.1.slim.min.js" |  relative_url }}"></script>
+  <script src="{{ "/assets/js/popper.min.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/bootstrap.min.js" | relative_url }}"></script>
+</body>
+</html>
