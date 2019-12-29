@@ -59,7 +59,7 @@
   <!-- Page Container -->
   <div class="container">
     <div class="row" style="font-family: 'Roboto', sans-serif;">
-      <div class="col-md-12">
+      <div class="col-md-8">
         <!-- Page heading -->
         <h1 class="text-primary"><u>{{ page.post_page_title }}</u></h1>
         <div class="text-muted text-small">
@@ -70,12 +70,29 @@
           <span class="badge badge-info">{{ page.tag }}</span>
         </div>
         <hr>
-        <!-- Page Content -->
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title text-success">Table of contents</h4>
+            <ul class="list-group list-group-flush">
+              {% include toc.html html=content %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+      <!-- Page Content -->
         <p>
           {{ content }}
         </p>
       </div>
     </div>
+
   </div>
   <!-- ./Page Container -->
   
