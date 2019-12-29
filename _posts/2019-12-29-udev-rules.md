@@ -7,13 +7,13 @@ category: Linux
 tag: udev, system programming, embedded linux
 ---
 
-udev is a system of managing the entries in the /dev directory. The entries in 
-/dev directories are special they are basically device files. So if you have a 
+udev is a system of managing the entries in the `/dev` directory. The entries in 
+`/dev` directories are special they are basically device files. So if you have a 
 uart to usb dongle plugged into your computer you will have one entry for it in
-the /dev directory.
+the `/dev` directory.
 
 ## How is udev going to help?
-Well basically you will have some control over them. Basically kernel will 
+Well basically you will have some control over these files. Basically kernel will 
 create them on the fly when you insert a device.
 
 What if you want to do some thing when a particular device is plugged in your
@@ -31,15 +31,15 @@ udev rules.
 reactivated.net explains a lot about writing udev rule and you can take it as a 
 starting point on writing your own custom udev rules. 
 Some of the commands used in the article has to be changed as they have 
-been changed after the article was written. For eg. udevinfo written in the 
-tutorial would have to be replaced by udevadm info.  
-You can run the commands as 
-such from the article but is gives you a good base. 
+been changed after the article was written. For eg. `udevinfo` written in the 
+tutorial would have to be replaced by `udevadm info`.  
+These commands might not run as such but is gives you a good base. 
 You can refer [this link](https://www.tecmint.com/udev-for-device-detection-management-in-linux/)
 for knowing the recent commands.
 
-+ This email from Greg KH on lwn is fun to read . Also if you want to know more 
-you you read a paper on udev by the developer who created it.. guess who? Here’s 
++ [This email from Greg KH](https://lwn.net/Articles/65197/) on lwn is fun
+to read . Also if you want to know more you can read a paper on udev by the 
+developer who created it.. guess who? Here’s 
 the [link for the paper.](https://landley.net/kdocs/ols/2003/ols2003-pages-249-257.pdf)
 
 
@@ -49,12 +49,12 @@ loaded automatically when the device is inserted can be a use case for writing
 your own udev rule.
 
 If you have to work on making a usb device to mount on a particular mount point 
-you can use the package [USBmount.](https://github.com/rbrito/usbmount)
+you can also use the exsisting package [USBmount.](https://github.com/rbrito/usbmount)
 
-Also if you interested in triggering a script based on device insertion or 
+Also, if you interested in triggering a script based on device insertion or 
 removal event you will have to make sure that the script is small. Because udev 
 would be waiting for your script to complete execution and other events would be
-missed. This is rude! Also udev would kill your script after a timeout. The 
+missed. **This is rude!** Also udev would kill your script after a timeout. The 
 best way out of it is to have a background task – a systemd service do all the 
 heavy lifting for you.
 
