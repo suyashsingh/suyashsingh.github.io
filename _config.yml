@@ -3,3 +3,10 @@ title: Suyash's Blog
 github: https://github.com/suyashsingh
 linkedin: https://www.linkedin.com/in/suyash-singh-bitti/
 theme:
+
+markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
