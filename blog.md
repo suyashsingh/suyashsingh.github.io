@@ -4,6 +4,10 @@ layout: default
 order: 2
 ---
 
+<p class="text-muted">Ramblings about embedded, linux and related cousins from yours truly. <br>
+Take it with a pinch of salt or a whole lump of it!
+</p>
+
 {% for post in site.posts %}
   <div class="card border-light">
     <div class="card-body">
