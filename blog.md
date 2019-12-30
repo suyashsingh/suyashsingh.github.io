@@ -19,7 +19,7 @@ Take it with a pinch of salt or a whole lump of it!
        <a href="#" class="fa fa-tag" onclick="return false"></a>
        <span class="badge badge-info">{{ post.tag }}</span>
       </p>
-      <a href="{{ post.url }}" class="btn btn-outline-success">Read More <span href="#" class="fa fa-arrow-circle-o-right" onclick="return false"></span></a>
+      <a href="{{ post.url }}" class="btn btn-outline-info">Read More <span href="#" class="fa fa-arrow-circle-o-right" onclick="return false"></span></a>
     </div>  
   </div>
 {% endfor %}
