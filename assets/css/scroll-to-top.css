@@ -1,0 +1,12 @@
+/*
+  CSS file for Back to top button
+  Credits:  https://codepen.io/michalwyrwa/pen/GBaPPj
+*/
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
