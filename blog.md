@@ -13,8 +13,8 @@ Take it with a pinch of salt or a whole lump of it!
     <div class="card-body">
       <h1 class="card-title"><a href="{{ post.url }}">{{ post.title}}</a></h1>
       <p class="card-text">
-      <a href="#" class="fa fa-clock-o" onclick="return false"></a>{{ post.readTime }} read | 
-       <a href="#" class="fa fa-calendar" onclick="return false"></a>{{ post.date | date: "%b %-d, %Y" }} |
+      <a href="#" class="fa fa-clock-o" onclick="return false"></a>{{ post.readTime }} read  &nbsp;&nbsp;&nbsp;
+       <a href="#" class="fa fa-calendar" onclick="return false"></a>{{ post.date | date: "%b %-d, %Y" }}  &nbsp;&nbsp;&nbsp;
        <a href="#" class="fa fa-list-alt" onclick="return false"></a>{{ post.category }}<br>
        <a href="#" class="fa fa-tag" onclick="return false"></a>
        <span class="badge badge-info">{{ post.tag }}</span>
