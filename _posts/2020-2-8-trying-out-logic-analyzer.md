@@ -28,7 +28,11 @@ and start taking samples. It would show a pretty graph for the signal under anal
 You can add a protocol analyser on to a particular signal and it would decode the signal
 for you.
 
+![Screenshot for Saleae Logic Software](http://i.imgur.com/FxUIuF2g.png)
+
 ## Links
 You can get logic analyzers from `amazon.in` as well. I got them from `robu.in`
 + [USB Logic Analyser](https://robu.in/product/usb-logic-analyze-24m-8ch-mcu-arm-fpga-dsp-debug-tool/)
 + [Test Hooks](https://robu.in/product/8ch-quality-test-hook-clip-logic-analyzer-test-folder-usb-saleae-24m/)
+
+
