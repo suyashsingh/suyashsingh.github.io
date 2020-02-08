@@ -4,6 +4,8 @@ layout: default
 order: 3
 ---
 
+<span class="badge badge-primary">Work in Progress</span>
+
 ## STM32F070 Board
 [STM32F070F6](https://www.st.com/en/microcontrollers-microprocessors/stm32f070f6.html) 
 is a `32-Bit ARM Cortex M0` microcontroller from ST micro. The micro comes in 
