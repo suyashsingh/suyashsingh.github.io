@@ -86,7 +86,8 @@ tells `tail` to show changes in the file at realtime. This way you won't have ke
 + Here is what it looks like.
 <img class="img-fluid" src="https://i.imgur.com/R0J13l1.png" alt="Raspberry Pi setup for kernel development">
 
-## 6. Install & Configure GIT optional 
+## 6. Install & Configure GIT
++ This step is optional. 
 + `sudo apt-get install git`
 + `git config --global user.name "Suyash"`
 + `git config --global user.email "suyash@example.com"`
