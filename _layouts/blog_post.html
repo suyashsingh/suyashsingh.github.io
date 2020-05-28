@@ -7,7 +7,7 @@
 
 <!-- Google Analytics -->
 {% include google_analytics.html %}
-<!-- ./Google Analytics -->
+{% include gtm-head.html %}
 
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -53,6 +53,8 @@
 </head>
 
 <body>
+  {% include gtm-body.html %}
+
   <!-- Dynamically generated navigation Bar -->
   {% include navigation.html %}
   <!-- ./Dynamically generated navigation Bar -->
