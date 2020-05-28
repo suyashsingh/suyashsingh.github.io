@@ -8,7 +8,11 @@
 			{% assign mypages = site.pages | sort: "order" %}
 			{% for page in mypages %}
 			<li class="nav-item">
-				<a class="nav-link text-white font-weight-bold" href="{{ page.url | absolute_url }}">{{ page.title }}</a>
+                {% if page.url == "/" %}
+                    <a class="nav-link text-white font-weight-bold" href="{{ page.url | absolute_url }}">Home</a>
+                {% else %}
+                    <a class="nav-link text-white font-weight-bold" href="{{ page.url | absolute_url }}">{{ page.title }}</a>
+                {% endif %}
 			</li>
 			{% endfor %}
 		</ul>
