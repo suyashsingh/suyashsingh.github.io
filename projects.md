@@ -1,5 +1,6 @@
 ---
 title: Projects
+description: List of projects developed by me over the time ranging from embedded / microcontroller based projects to projects including PCB design using KiCAD, RTOS based applications & much more.
 layout: default
 order: 3
 ---

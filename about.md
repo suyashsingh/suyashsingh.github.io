@@ -1,5 +1,6 @@
 ---
 title: About Me
+description: I am Suyash Singh Bitti, an Embedded Developer currently working at C-DAC Pune. I work in Embedded Systems, Kernel Development, Linux Device Drivers, Systems Programming Microcontrollers, IoT & alied techologies.
 layout: default
 order: 4
 ---

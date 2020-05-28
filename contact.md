@@ -1,6 +1,7 @@
 ---
 title: Contact
 layout: default
+description: You can get in touch with me here. Please fill in this form and I would get back to you as soon as I can. | Suyash Singh Bitti
 order: 5
 ---
 <!-- Contact form -->
