@@ -1,5 +1,15 @@
-name: Suyash Singh
-title: Suyash's Blog
+name: Suyash Singh Bitti
+title: Suyash Singh Bitti
+author: Suyash Singh Bitti
+url: https://suyashsingh.github.io/
+
+tagline: Suyash's blog on Embedded Systems, Linux Device drivers & C.
+description: I am an Suyash Singh Bitti an Embedded Software engineer. I work on Linux Device Drivers, Embedded Systems, Micro controllers Linux, Linux Systems Programming, Socket programming, C and more. This blog is all about sharing my projects and learnings. | Suyash's Blog
+
+twitter:
+    username: cq_suyash
+    card: summary
+
 github: https://github.com/suyashsingh
 linkedin: https://www.linkedin.com/in/suyash-singh-bitti/
 theme:
@@ -10,3 +20,6 @@ kramdown:
  auto_ids: true
  hard_wrap: false
  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-seo-tag
