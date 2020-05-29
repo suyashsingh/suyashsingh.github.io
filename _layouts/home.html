@@ -88,9 +88,13 @@
         <div class="card-body">
         <h4 class="card-title">More</h4>
         <ul class="list-group list-group-flush">
+          {% comment %}
+            Check if top level page has order variable defined in it. If not don't add it on the navigation menu.
+            To hide a page from the navigation menu omit the order variable in the page.
+          {% endcomment %}
           {% assign mypages = site.pages | sort: "order" %}
           {% for page in mypages %}
-            {% unless page.exclude %}
+            {% if page.order != nil %}
                 <li class="list-group-item">
                   {% if page.url == "/" %}
                     <a href="{{ page.url | absolute_url }}">Home</a>
@@ -98,7 +102,7 @@
                     <a href="{{ page.url | absolute_url }}">{{ page.title }}</a>
                   {% endif %}
                 </li>
-             {% endunless %}
+            {% endif %}
           {% endfor %}
         </ul>
         </div>

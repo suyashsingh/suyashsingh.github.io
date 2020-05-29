@@ -1,9 +1,12 @@
 # Codebase for `suyashsingh.github.io`
++ To omit a page from the navigation menu, don't define `order` variable in page frontmatter.
 
 ## Running the local version
++ Instaling Plugins: Add them to `Gemfile` and `_config.yml`.
+`bundle install`
 
-+ Since I am not using any gems, the following would be all for serving the site locally.
-`jekyll serve`
++ Serving the site locally:
+`bundle exec jekyll serve`
 
 ## Learnings
 1. When a plain jekyll site is deployed on github, `github-pages` comes into action.
