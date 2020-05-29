@@ -63,9 +63,9 @@
 
   <!-- Page Container -->
   <div class="container">
+    <!-- Page heading -->
     <div class="row">
-      <div class="col-md-8">
-        <!-- Page heading -->
+      <div class="col-md-12 text-center">
         <h1 class="text-primary"><u>{{ page.post_page_title }}</u></h1>
         <div class="text-muted text-small">
           <a href="#" class="fa fa-clock-o" onclick="return false"></a>{{ page.readTime }} read &nbsp;&nbsp;&nbsp; 
@@ -76,8 +76,32 @@
         </div>
         <hr>
       </div>
+    </div>
 
-      <div class="col-md-4">
+    <!-- Page Introduction -->
+    {% if page.post_intro != nil %}
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <p class="lead">
+          {{ page.post_intro }}
+        </p>
+      </div>
+    </div>
+    {% endif %}
+
+    <!-- Featured Image-->
+    {% if page.featured_image %}
+      <div class="row">
+        <div class="col-md-8 offset-md-2 text-center">
+          <img alt="{{ page.featured_image['alt'] }}" src="/assets/images/{{ page.featured_image['src'] }}" class="img-fluid">
+        </div>
+      </div>
+      <br>
+    {% endif %}
+
+    <!-- Table of Contents -->
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
         <div class="card">
           <div class="card-body">
             <h4 class="card-title text-success">Table of contents</h4>
@@ -89,9 +113,9 @@
       </div>
     </div>
 
+    <!-- Page Content -->
     <div class="row">
-      <div class="col-md-12">
-      <!-- Page Content -->
+      <div class="col-md-8 offset-md-2">
         <p>
           {{ content }}
         </p>
