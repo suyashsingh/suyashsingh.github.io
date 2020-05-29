@@ -90,13 +90,15 @@
         <ul class="list-group list-group-flush">
           {% assign mypages = site.pages | sort: "order" %}
           {% for page in mypages %}
-            <li class="list-group-item">
-              {% if page.url == "/" %}
-                <a href="{{ page.url | absolute_url }}">Home</a>
-              {% else %}
-                <a href="{{ page.url | absolute_url }}">{{ page.title }}</a>
-              {% endif %}
-            </li>
+            {% unless page.exclude %}
+                <li class="list-group-item">
+                  {% if page.url == "/" %}
+                    <a href="{{ page.url | absolute_url }}">Home</a>
+                  {% else %}
+                    <a href="{{ page.url | absolute_url }}">{{ page.title }}</a>
+                  {% endif %}
+                </li>
+             {% endunless %}
           {% endfor %}
         </ul>
         </div>
