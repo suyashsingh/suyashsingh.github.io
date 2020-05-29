@@ -24,4 +24,4 @@ kramdown:
 plugins:
   - jekyll-seo-tag
 
-permalink: /blog/:title/
+permalink: /blog/:title
