@@ -71,8 +71,9 @@
           <a href="#" class="fa fa-clock-o" onclick="return false"></a>{{ page.readTime }} read &nbsp;&nbsp;&nbsp; 
           <a href="#" class="fa fa-calendar" onclick="return false"></a>{{ page.date | date: "%b %-d, %Y" }} &nbsp;&nbsp;&nbsp;
           <a href="#" class="fa fa-list-alt" onclick="return false"></a>{{ page.category }}<br>
-          <a href="#" class="fa fa-tag" onclick="return false"></a>
-          <span class="badge badge-info">{{ page.tag }}</span>
+          {% for tag in page.tag %}
+            <a class="badge badge-light"><i class="fa fa-tag" aria-hidden="true"></i>{{ tag }}</a>
+          {% endfor %}
         </div>
         <hr>
       </div>
