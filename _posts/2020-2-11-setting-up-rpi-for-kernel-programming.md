@@ -5,7 +5,7 @@ layout: blog_post
 permalink: /blog/raspberry-pi-kernel-development-setup
 readTime: 15 minute
 category: Linux Kernel Development
-tag: linux kernel development, linux device drivers, raspberry pi
+tag: [raspberry-pi, linux-device-driver]
 ---
 
 ## 1. Configure Raspberry Pi for Headless Mode

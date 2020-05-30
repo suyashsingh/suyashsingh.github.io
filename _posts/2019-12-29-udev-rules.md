@@ -4,7 +4,7 @@ post_page_title: udev rules
 layout: blog_post
 readTime: 5 minute
 category: Linux
-tag: udev, system programming, embedded linux
+tag: linux
 ---
 
 udev is a system of managing the entries in the `/dev` directory. The entries in 

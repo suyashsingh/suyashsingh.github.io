@@ -4,7 +4,7 @@ post_page_title: Reading Code
 layout: blog_post
 readTime: 10 minute
 category: dev
-tag: devtools
+tag: misc
 ---
 
 **Isn't reading code as important as writing code?** I guess focusing on reading code makes sense rather than blurting out code(which by the way is called *art of creating bugs*). Reading code from a project can be a bit more complicated than it sounds. You might be new to the language and its alien constructs might cause a bumpy ride on your path to comprehension.  Here are some of the ways for making your life easier.

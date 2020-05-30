@@ -4,7 +4,7 @@ post_page_title: Trying out Logic Analyzer
 layout: blog_post
 readTime: 5 minute
 category: Embedded
-tag: logic analyser, embedded tools, embedded
+tag: embedded
 ---
 
 Finally I got my hands on a USB Logic Analyser. I bought a 24 Mega Hertz 8 
