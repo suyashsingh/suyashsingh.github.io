@@ -80,7 +80,7 @@
                     <a href="#" class="fa fa-calendar" onclick="return false"></a>{{ post.date | date: "%b %-d, %Y" }}  &nbsp;&nbsp;&nbsp;
                     <a href="#" class="fa fa-list-alt" onclick="return false"></a>{{ post.category }}<br>
                     {% for tag in post.tag %}
-                      <a class="badge badge-light"><i class="fa fa-tag" aria-hidden="true"></i> {{ tag }}</a>
+                      <a href="#tag-{{ tag }}"class="badge badge-light"><i class="fa fa-tag" aria-hidden="true"></i> {{ tag }}</a>
                     {% endfor %}
                 </p>
                 <a href="{{ post.url }}" class="btn btn-outline-info">Read More <span href="#" class="fa fa-arrow-circle-o-right" onclick="return false"></span></a>
@@ -101,19 +101,20 @@
         {% endfor %}
         <hr>
 
-        <h3 class="text-primary">List of Post acording to Tags</h3>
+        <h3 class="text-primary">Tagged Posts</h3>
         {% for tag in site.tags %}
         {% assign t = tag | first %}
         {% assign posts = tag | last %}
-        <span class="badge badge-pill badge-primary">
-            {{t | downcase | replace:" ","-" }}
-            <span class="sr-only">list of posts tagged under ss</span>
+        {% assign tagname = t | downcase | replace:" ","-" %}
+        <span class="badge badge-pill badge-primary" id="tag-{{ tagname }}">
+          {{ tagname }}
+          <span class="sr-only">list of posts tagged under the tag {{ tagname }}</span>
         </span><br>
 
         {% for post in posts %}
             {% if post.tags contains t %}
-                <a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%B %-d, %Y"  }}</a>
-                <br>
+              <a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%B %-d, %Y"  }}</a>
+              <br>
             {% endif %}
         {% endfor %}
         <br>
