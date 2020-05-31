@@ -3,7 +3,6 @@ tite: Trying out logic analyzer
 post_page_title: Trying out Logic Analyzer
 layout: blog_post
 readTime: 5 minute
-category: Embedded
 tag: embedded
 ---
 

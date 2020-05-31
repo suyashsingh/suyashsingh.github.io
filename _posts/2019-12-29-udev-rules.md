@@ -3,7 +3,6 @@ tite: My second Post
 post_page_title: udev rules
 layout: blog_post
 readTime: 5 minute
-category: Linux
 tag: linux
 ---
 

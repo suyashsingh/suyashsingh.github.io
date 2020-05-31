@@ -3,7 +3,6 @@ tite: Reading Code
 post_page_title: Reading Code
 layout: blog_post
 readTime: 10 minute
-category: dev
 tag: misc
 ---
 
