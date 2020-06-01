@@ -1,6 +1,6 @@
 ---
-tite: Configuring Raspberry Pi for Linux Kernel Development
-post_page_title: Configuring Raspberry Pi for Linux Kernel Development
+tite: "Configuring Raspberry Pi for Linux Kernel Development"
+pretty_title: "Configuring Raspberry Pi for Linux Kernel Development"
 layout: blog_post
 permalink: /blog/raspberry-pi-kernel-development-setup
 readTime: 15 minute

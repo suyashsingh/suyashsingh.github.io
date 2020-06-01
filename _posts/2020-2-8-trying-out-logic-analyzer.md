@@ -1,6 +1,6 @@
 ---
-tite: Trying out logic analyzer
-post_page_title: Trying out Logic Analyzer
+tite: "Trying out logic analyzer"
+pretty_title: "Trying out Logic Analyzer"
 layout: blog_post
 readTime: 5 minute
 tag: embedded

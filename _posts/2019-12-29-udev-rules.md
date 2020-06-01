@@ -1,6 +1,6 @@
 ---
-tite: My second Post
-post_page_title: udev rules
+tite: "udev Rules"
+pretty_title: "udev Rules"
 layout: blog_post
 readTime: 5 minute
 tag: linux
