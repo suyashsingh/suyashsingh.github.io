@@ -25,6 +25,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+permalink: /:categories/:title
 collections:
   posts:
     permalink: /blog/:title
