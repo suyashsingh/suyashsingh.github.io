@@ -18,7 +18,6 @@
 <link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css" | relative_url }}">
 <link rel="stylesheet" href="{{ "/assets/css/scroll-to-top.css" | relative_url }}">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
   /* Sticky Footer Classes */
   html,
@@ -42,12 +41,14 @@
   .navbar {
     border-bottom:1px solid #FFF;
   }
+
+  {% include svg-icons-css.html %}
 </style>
 </head>
 
 <body>
   {% include gtm-body.html %}
-
+  {% include svg-icons.html %}
   <!-- Dynamically generated navigation Bar -->
   {% include navigation.html %}
   <!-- ./Dynamically generated navigation Bar -->
@@ -75,8 +76,8 @@
         <br>
         <br>
         <span>
-        <a href="{{ site.github }}" target="_blank" class="fa fa-github"></a>
-        <a href="{{ site.linkedin }}" target="_blank" class="fa fa-linkedin"></a>
+        <a href="{{ site.github }}" target="_blank"><span><svg class="svg-icon"><use xlink:href="#icon-github"></use></svg></span></a>
+        <a href="{{ site.linkedin }}" target="_blank"><span><svg class="svg-icon"><use xlink:href="#icon-linkedin"></use></svg></span></a>
         </span>
       </div>
 
@@ -109,7 +110,7 @@
   </div>
   <!-- ./Page Container -->
   
-  <!-- Page Footer -->
+  <!-- Footer for Home Page / Donot add site wide footer -->
   <footer id="sticky-footer" class="py-4"><a href="{{ page.url | absolute_url }}">
     <div class="container text-center">
       <small>Made with &#x2764; by Suyash.</small>
@@ -119,11 +120,10 @@
 
   <!-- Optional JavaScript -->
   <!-- Scroll to top link -->
-  <a id="back-to-top" href="#" class="btn btn-outline-primary btn-lg back-to-top" role="button"><i class="fa fa-chevron-up"></i></a>
+  <a id="back-to-top" href="#" class="btn btn-outline-primary btn-lg back-to-top" role="button"><span><svg class="svg-icon"><use xlink:href="#icon-angle-double-up"></use></svg></span></a>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="{{ "/assets/js/scroll-to-top.js" |  relative_url }}"></script>
   <script src="{{ "/assets/js/jquery-3.3.1.min.js" |  relative_url }}"></script>
-  <script src="{{ "/assets/js/popper.min.js" | relative_url }}"></script>
   <script src="{{ "/assets/js/bootstrap.min.js" | relative_url }}"></script>
 </body>
 </html>
