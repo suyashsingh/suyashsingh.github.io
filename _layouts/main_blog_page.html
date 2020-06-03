@@ -38,8 +38,17 @@
     background-image: url("{{ "/assets/images/header-bg.jpg" | relative_url }}");
   }
 
+  /* CSS for Navbar */
   .navbar {
     border-bottom:1px solid #FFF;
+  }
+
+  #navbar-toggle-cbox:checked ~ .collapse {
+    display:block;
+  }
+
+  #navbar-toggle-cbox {
+    display: none;
   }
 
   {% include svg-icons-css.html %}
@@ -131,6 +140,5 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="{{ "/assets/js/scroll-to-top.js" |  relative_url }}"></script>
   <script src="{{ "/assets/js/jquery-3.3.1.min.js" |  relative_url }}"></script>
-  <script src="{{ "/assets/js/bootstrap.min.js" | relative_url }}"></script>
 </body>
 </html>
