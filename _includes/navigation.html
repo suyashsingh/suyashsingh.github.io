@@ -1,8 +1,10 @@
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top blue-header-bg" >
 	<a href="/" class="navbar-brand border rounded" style="border-width: 2px !important; padding: 5px !important;">Suyash</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	<input type="checkbox" id="navbar-toggle-cbox">
+	<label role="navigation" for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbar-header">
 		<span class="navbar-toggler-icon"></span>
-	</button>
+	</label>
+
 	<div class="collapse navbar-collapse" id="collapsibleNavbar">
 		<ul class="navbar-nav">
             {% comment %}
