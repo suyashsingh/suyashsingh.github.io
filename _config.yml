@@ -29,3 +29,12 @@ permalink: /:categories/:title/
 collections:
   posts:
     permalink: /blog/:title/
+
+compress_html:
+  clippings: all 
+  comments: all
+  endings: []
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
