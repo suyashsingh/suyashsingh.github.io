@@ -4,6 +4,7 @@ pretty_title: "Configuring Raspberry Pi for Linux Kernel Development"
 layout: blog_post
 permalink: /blog/raspberry-pi-kernel-development-setup
 readTime: 15 minute
+has_code: true
 tag: [raspberry-pi, linux-device-driver]
 ---
 
@@ -65,18 +66,13 @@ They need to be the ones with which the your kernel was orignally built.
 + Save the following as `Makefile`.
 Make sure you are using tabs for indentation and not spaces.
 
-	```bash 
-
-	obj-m = hello.o 
+	```make 
+	obj-m = hello.o
 
 	all: 
-
 		make -C /lib/modules/$(shell uname -r)/build/ M=$(PWD) modules 
-
 	clean: 
-
 		make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean 
-
 	``` 
 
 + Compile the module by running `make`

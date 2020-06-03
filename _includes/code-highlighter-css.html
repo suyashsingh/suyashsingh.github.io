@@ -1,0 +1,9 @@
+/* Custom Css for Code Highlighter
+    Remove the border around unsupported code highlighting in production
+*/
+{% if jekyll.environment == "production" and page.has_code == true %}
+.highlight .err { border: 0px }
+{% else if jekyll.environment == "development" and page.has_code == true %}
+/* Highlight errors in development */
+.highlight .err { border: 1px solid #FF0000 }
+{% endif %}

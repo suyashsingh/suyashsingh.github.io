@@ -18,6 +18,11 @@
 <link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css" | relative_url }}">
 <link rel="stylesheet" href="{{ "/assets/css/scroll-to-top.css" | relative_url }}">
 
+<!-- Code Highlighting Style sheet for rogue / Can be lazy loaded -->
+{% if page.has_code == true %}
+<link rel="stylesheet" href="{{ "/assets/css/friendly.css" | relative_url }}">
+{% endif %}
+
 <style>
   /* Sticky Footer Classes */
   html,
@@ -43,6 +48,7 @@
   }
 
   {% include svg-icons-css.html %}
+  {% include code-highlighter-css.html %}
 </style>
 
 </head>
