@@ -1,21 +1,21 @@
 /* 
 	js for scroll to top.
-	https://codepen.io/michalwyrwa/pen/GBaPPj
+	https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 */
 
-window.onload = function() {
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 50) {
-			$('#back-to-top').fadeIn();
-		} else {
-			$('#back-to-top').fadeOut();
-		}
-	});
-	// scroll body to 0px on click
-	$('#back-to-top').click(function () {
-		$('body,html').animate({
-			scrollTop: 0
-		}, 400);
-		return false;
-	});
+var scrollBtn = document.getElementById("back-to-top");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
