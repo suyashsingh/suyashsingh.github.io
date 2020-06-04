@@ -44,12 +44,12 @@ layout: compress
         This page is about my ongoing journey into embedded systems. <br>
         <strong>~ Suyash</strong>
         </p>
-        <a href="/about/" class="btn btn-outline-success">More About Me <span href="#" class="fa fa-arrow-circle-o-right" onclick="return false"></span></a>
+        <a href="/about/" class="btn btn-outline-success" title="About Page to know more about me">More About Me</a>
         <br>
         <br>
         <span>
-        <a href="{{ site.github }}" target="_blank"><span><svg class="svg-icon"><use xlink:href="#icon-github"></use></svg></span></a>
-        <a href="{{ site.linkedin }}" target="_blank"><span><svg class="svg-icon"><use xlink:href="#icon-linkedin"></use></svg></span></a>
+        <a href="{{ site.github }}" title="my github page" target="_blank"><span><svg class="svg-icon"><use xlink:href="#icon-github"></use></svg></span></a>
+        <a href="{{ site.linkedin }}" title="my linkedin profile" target="_blank"><span><svg class="svg-icon"><use xlink:href="#icon-linkedin"></use></svg></span></a>
         </span>
       </div>
 
@@ -67,9 +67,9 @@ layout: compress
             {% if page.order != nil %}
                 <li class="list-group-item">
                   {% if page.url == "/" %}
-                    <a href="{{ page.url | absolute_url }}">Home</a>
+                    <a href="{{ page.url | absolute_url }}" title="link to homepage at suyashsingh.github.io">Home</a>
                   {% else %}
-                    <a href="{{ page.url | absolute_url }}">{{ page.title }}</a>
+                    <a href="{{ page.url | absolute_url }}" title="link to my {{ page.title }} page">{{ page.title }}</a>
                   {% endif %}
                 </li>
             {% endif %}
@@ -83,7 +83,7 @@ layout: compress
   <!-- ./Page Container -->
   
   <!-- Footer for Home Page / Donot add site wide footer -->
-  <footer id="sticky-footer" class="py-4"><a href="{{ page.url | absolute_url }}">
+  <footer id="sticky-footer" class="py-4"><a href="{{ page.url | absolute_url }}" title="link to homepage suyash's homepage">
     <div class="container text-center">
       <small>Made with &#x2764; by Suyash.</small>
     </div>
@@ -92,7 +92,7 @@ layout: compress
 
   <!-- Optional JavaScript -->
   <!-- Scroll to top link -->
-  <a id="back-to-top" href="#" class="btn btn-outline-primary btn-lg back-to-top" role="button"><span><svg class="svg-icon"><use xlink:href="#icon-angle-double-up"></use></svg></span></a>
+  <a aria-hidden="true" id="back-to-top" href="#" class="btn btn-outline-primary btn-lg back-to-top" role="button"><span><svg class="svg-icon"><use xlink:href="#icon-angle-double-up"></use></svg></span></a>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="{{ "/assets/js/scroll-to-top.js" |  relative_url }}"></script>
 </body>
