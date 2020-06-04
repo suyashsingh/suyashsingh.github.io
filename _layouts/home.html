@@ -27,8 +27,8 @@ layout: compress
 
   <!-- Jumbotron -->
   <div class="jumbotron text-center blue-header-bg" style="margin-top:30px;">
-  	<h1 class="text-light" style="font-size: 60px; ">Suyash Singh</h1> 
-  	<h3 class="text-light">Embedded bits & bytes!</h3>
+  	<h1 class="text-light" style="font-size: 60px; ">Suyash Singh Bitti</h1>
+    <span class="text-light">Suyash's Blog ~ Embedded bits & bytes!</span>
   </div>
   <!-- ./Jumbotron -->
 
@@ -36,15 +36,15 @@ layout: compress
   <div class="container">
     <div class="row text-center">
       <div class="col-md-8">
-        <h1 class="text-primary"><tt>printf(<span class="text-success">"Hello World! \n"</span>);</tt></h1>
-        <br>
-        <p>
-        I am an Embedded Software developer from Pune. I currently work
-        at the R&D division of Center for Development of Advanced Computing (C-DAC) Pune.
-        This page is about my ongoing journey into embedded systems. <br>
-        <strong>~ Suyash</strong>
+        <p class="lead">
+        <span class="text-info" style="font-size: 2em;">नमस्ते (Namaste/Hello)</span><br><br>
+        I am <strong>Suyash Singh Bitti</strong>. I am an Embedded Software Developer, living in
+        Pune, India. I work on Embedded Systems, Linux Device Drivers, Linux Systems Programming,
+        Socket Programming, Microcontrollers, IoT and more.
+
+        Explore this site to find more about me.
         </p>
-        <a href="/about/" class="btn btn-outline-success" title="About Page to know more about me">More About Me</a>
+        <a href="/about/" class="btn btn-outline-success" title="Know more about Suyash Singh Bitti">More About Me</a>
         <br>
         <br>
         <span>
@@ -67,9 +67,9 @@ layout: compress
             {% if page.order != nil %}
                 <li class="list-group-item">
                   {% if page.url == "/" %}
-                    <a href="{{ page.url | absolute_url }}" title="link to homepage at suyashsingh.github.io">Home</a>
+                    <a href="{{ page.url | absolute_url }}" title="Home page of Suyash Singh Bitti">Home</a>
                   {% else %}
-                    <a href="{{ page.url | absolute_url }}" title="link to my {{ page.title }} page">{{ page.title }}</a>
+                    <a href="{{ page.url | absolute_url }}" title="suyash singh bitti's {{ page.title | downcase }} page">{{ page.title }}</a>
                   {% endif %}
                 </li>
             {% endif %}
