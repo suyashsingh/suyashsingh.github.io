@@ -42,7 +42,7 @@ as HTML / CSS / JS framework. Github pages simplifies the deployment of the webs
 
 You can have a look at <a href="https://github.com/suyashsingh/suyashsingh.github.io" title="source code of suyashsingh.github.io" target="blank">source code of suyashsingh.github.io here</a>.
 
-If there is anything else you would want to know about me please feel free to <a href="/contact.html" title="contact me page">contact me</a>.
+If there is anything else you would want to know about me please feel free to <a href="/contact/" title="contact me page">contact me</a>.
 
 <div class="alert alert-primary" role="alert">
   <span><u>Disclaimer</u></span><br>

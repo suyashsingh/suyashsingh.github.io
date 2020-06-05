@@ -4,9 +4,10 @@ pretty_title: "Reading Code"
 layout: blog_post
 readTime: 10 minute
 tag: misc
+description: Reading code if one of the essential skills in software development. This post shows you ways how you can read code effectively. Follow along to know the tools you can employ to make reading code easier.
+post_intro: |
+    **Isn't reading code as important as writing code?** Focusing on reading code makes sense rather than blurting out code(which by the way is called *art of creating bugs*). Reading code from a project can be a bit more complicated than it sounds but the benefits outweighs the initial efforts. You might be new to the language and its alien constructs mightcause a bumpy ride on understanding the code. A bit of persisten effort is all you need to analyze the code and learn out of it.  Here are some of the ways to make reading code easier for you.
 ---
-
-**Isn't reading code as important as writing code?** I guess focusing on reading code makes sense rather than blurting out code(which by the way is called *art of creating bugs*). Reading code from a project can be a bit more complicated than it sounds. You might be new to the language and its alien constructs might cause a bumpy ride on your path to comprehension.  Here are some of the ways for making your life easier.
 
 ## Run the code
 Download the code and run it. You would figure out the dependencies, the build system and many other things in the process that would aid you in getting a better understanding of code.
@@ -24,12 +25,12 @@ Well it might take some time. Here are some more things that you can do:
     An editor with syntax highlighting for the language that you are working in could do wonders. With it you can move through function   declarations, find its refferences and so on. Examining library and function calls made in the application can be one of your strategies.
 
 + ### Create Documentation if there isn't any
-    You can use tools like `doxygen` or `sphinx` to create documentation for undocumented projects(illegal in some countries). With the interim documentation in place you won't be immediately bogged down by the code.
+    You can use tools like <a href="https://www.doxygen.nl/index.html" title="link to homepage of doxygen documentation tool" target="_blank">Doxygen</a> or <a href="https://www.sphinx-doc.org/en/master/" title="Sphinx Documentation tool homepage" target="_blank">Sphinx</a> to create documentation for undocumented projects(illegal in some countries). With the interim documentation in place you won't be immediately bogged down by the code.
 
 + ### Use tools for reading code
     You can use cross refferencers for figuring out the pieces in code.
-    `Sourcegraph` is one such tool. I personally find it useful if you have to read code. Its a paid tool, but you can use their web based 
-    version to dig into github repositories(only) for free. I know that ain't much and can't be used with local projects but anyways I    wasn't promising a sivler bullet. Here's <a href="https://sourcegraph.com/github.com/cesanta/mongoose" target="_blank">the link for demo</a> of sourcegraph on the github repo of mongose. See the link, you need to prepend `sourcegraph.com` before the link of the github repository.
+    <a href="https://about.sourcegraph.com/" title="About Sourcegraph code search tool" target="_blank">Sourcegraph</a> is one such tool. I personally find it useful if you have to read code. Its a paid tool, but you can use their web based 
+    version to dig into github repositories(only) for free. I know that ain't much and can't be used with local projects but anyways I wasn't promising a sivler bullet. Here's <a href="https://sourcegraph.com/github.com/cesanta/mongoose" target="_blank" title="try out source graph on mongose github repository">the link for demo of sourcegraph on the github repo of mongose</a> . See the link, you need to prepend `sourcegraph.com` before the link of the github repository.
 
 Above all keep digging into the code.
 

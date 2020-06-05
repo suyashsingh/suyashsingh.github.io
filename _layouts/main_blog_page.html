@@ -67,8 +67,8 @@ layout: compress
 
   <!-- Jumbotron -->
   <div class="jumbotron text-center blue-header-bg" style="margin-top:30px;">
-  	<h1 class="text-light" style="font-size: 60px; ">Suyash Singh</h1> 
-  	<h3 class="text-light">Embedded bits & bytes!</h3>
+    <span class="text-light" style="font-size: 3.4em;">Suyash Singh Bitti</span><br>
+    <span class="text-light">Suyash's Blog ~ Embedded bits & bytes!</span>
   </div>
   <!-- ./Jumbotron -->
 
@@ -78,23 +78,31 @@ layout: compress
       <div class="col-md-8 offset-md-2">
         <!-- Page title  -->
         <h1 class='text-primary'>{{ page.title }}</h1>
-        <p class="lead">Ramblings about embedded, linux and related cousins from yours truly. <br>
-        Take it with a pinch of salt or a whole lump of it!
+        <p class="lead">
+          <!-- Ramblings about embedded, linux and related cousins from yours truly. <br>
+        Take it with a pinch of salt or a whole lump of it! -->
+        These series of blog posts can be thought of as ramblings on Embedded Systems, 
+        Linux Systems Programming, Linux Device Drivers, Microcontroller and other related cousins by yours truly.
+
+        The blog posts are pragmatic in nature. My <a href="/projects" title="projects by suyash singh bitti">projects</a> are
+        the main driving force behind these.I hope these blog posts are helpful to you as they where to <a href="/about/" title="know more about suyash singh bitti">me</a>.
+        If the case you have suggestions for improvement for posts in this blog please feel free to <a href="/contact/" 
+        title="contact form for getting in touch with suyash singh bitti">contact me</a>.
         </p>
 
         <h3 class="text-primary"><u>Posts</u></h3>
         {% for post in site.posts %}
         <div class="card border-light">
             <div class="card-body">
-                <h4 class="card-title"><a href="{{ post.url }}">{{ post.pretty_title}}</a></h4>
+                <h4 class="card-title"><a href="{{ post.url }}" title="read the blog post {{ post.pretty_title }} by {{ site.author }}">{{ post.pretty_title}}</a></h4>
                 <p class="card-text">
                   <span><svg class="svg-icon"><use xlink:href="#icon-clock"></use></svg></span> {{ post.readTime }} read  &nbsp;&nbsp;&nbsp;
                   <span><svg class="svg-icon"><use xlink:href="#icon-calendar"></use></svg></span> {{ post.date | date: "%b %-d, %Y" }}  &nbsp;&nbsp;&nbsp;
                     {% for tag in post.tag %}
-                      <a href="#tag-{{ tag }}"class="badge badge-light"><span><svg class="svg-icon"><use xlink:href="#icon-tag"></use></svg></span> {{ tag }}</a>
+                      <a href="#tag-{{ tag }}" title="see more posts with the tag {{ tag }}" class="badge badge-light"><span><svg class="svg-icon"><use xlink:href="#icon-tag"></use></svg></span> {{ tag }}</a>
                     {% endfor %}
                 </p>
-                <a href="{{ post.url }}" class="btn btn-outline-info">Read More <span><svg class="svg-icon icon-info"><use xlink:href="#icon-arrow-right"></use></svg></span></a>
+                <a href="{{ post.url }}" title="read more about the post {{ post.pretty_title }}" class="btn btn-outline-info">Read More <span><svg class="svg-icon icon-info"><use xlink:href="#icon-arrow-right"></use></svg></span></a>
             </div>  
         </div>
         {% endfor %}
@@ -124,7 +132,7 @@ layout: compress
 
         {% for post in posts %}
             {% if post.tags contains t %}
-              <a href="{{ post.url }}">{{ post.pretty_title }} - {{ post.date | date: "%B %-d, %Y"  }}</a>
+              <a href="{{ post.url }}" title="read the post {{ post.pretty_title }} by suyash singh bitti">{{ post.pretty_title }} - {{ post.date | date: "%B %-d, %Y"  }}</a>
               <br>
             {% endif %}
         {% endfor %}
