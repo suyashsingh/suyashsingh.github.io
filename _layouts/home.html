@@ -15,7 +15,45 @@ layout: compress
 <!-- Google Analytics -->
 {% include google_analytics.html %}
 {% include gtm-head.html %}
-<link rel="stylesheet" href="{{ "/assets/css/styles.pure.css" | relative_url }}">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/scroll-to-top.css" | relative_url }}">
+
+<style>
+  /* Sticky Footer Classes */
+  html,
+  body {
+    height: 100%;
+  }
+
+  #page-content {
+    flex: 1 0 auto;
+  }
+
+  #sticky-footer {
+    flex-shrink: none;
+  }
+
+  /* Other customizations */
+  .blue-header-bg {
+    background-image: url("{{ "/assets/images/header-bg.jpg" | relative_url }}");
+  }
+
+  /* CSS for Navbar */
+  .navbar {
+    border-bottom:1px solid #FFF;
+  }
+
+  #navbar-toggle-cbox:checked ~ .collapse {
+    display:block;
+  }
+
+  #navbar-toggle-cbox {
+    display: none;
+  }
+
+  {% include svg-icons-css.html %}
+</style>
 </head>
 
 <body>
