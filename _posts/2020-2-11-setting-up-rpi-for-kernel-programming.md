@@ -38,9 +38,10 @@ This is needed as network operations need system time to be proper, eg. for inst
 + `sudo apt-get update`  
 
 ## 5. Install Kernel Headers 
-+ `sudo apt install raspberrypi-kernel-headers` 
-You need the kernel headers as during kernel development process you will be including these header files.
-They need to be the ones with which the your kernel was orignally built.
++ `sudo apt install raspberrypi-kernel-headers`
+
+	You need the kernel headers as during kernel development process you will be including these header files.
+	They need to be the ones with which the your kernel was orignally built.
 
 ## 6. Test setup by compiling Hello World Kernel Module. 
 + GCC is usually installed by default in Raspbian distributions.

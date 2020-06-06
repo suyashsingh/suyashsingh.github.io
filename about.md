@@ -5,11 +5,11 @@ layout: default
 order: 4
 ---
 
-Hello, I am <strong>Suyash Singh Bitti</strong>. I am an Embedded Software Developer. Currently I am employed
-by the R&D division of C-DAC. I currently live at Pune.
+Hello, I am <strong>Suyash Singh Bitti</strong>. I am an Embedded Software Developer currently employed
+by the R&D division of C-DAC Pune.
 
 ## Work & Areas of Interest
-I work on Embedded Systems, Linux Kernel Programming, Linux Device Drivers to be specific,
+I like to work on Embedded Systems, Linux Kernel Programming, Linux Device Drivers,
 Linux System Programming, Socket Programming i.e. Network programming and more. I love to
 tinker with microcontrollers and electronics.
 
