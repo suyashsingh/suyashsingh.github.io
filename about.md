@@ -4,14 +4,19 @@ description: I am Suyash Singh Bitti, an Embedded Developer working at CDAC Pune
 layout: default
 order: 4
 ---
+Hello, I am <strong>Suyash Singh Bitti</strong>. I am an Embedded Software developer currently working at
+Samsung Semiconductors (SSIR), Banglore. Prior to SSIR I was employed at HPC Techonologies R&D division
+of Center for Development of Advanced Computing (C-DAC) Pune. 
 
-Hello, I am <strong>Suyash Singh Bitti</strong>. I am an Embedded Software Developer currently employed
-by the R&D division of C-DAC Pune.
 
 ## Work & Areas of Interest
 I like to work on Embedded Systems, Linux Kernel Programming, Linux Device Drivers,
 Linux System Programming, Socket Programming i.e. Network programming and more. I love to
 tinker with microcontrollers and electronics.
+
+At Samsung I work on Exynos Automotive chipset, working on the Systems Side. My work includes
+working on communication interfaces: I2C, SPI and UART on Linux, Android and QNX as a driver
+developer primarily. 
 
 Here is a list of my interest areas:
 + Microcontrollers
