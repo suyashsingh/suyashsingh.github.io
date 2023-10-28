@@ -8,6 +8,8 @@
 + Serving the site locally:
 `bundle exec jekyll serve`
 
+## Local Server Installation
+
 ## Learnings
 1. When a plain jekyll site is deployed on github, `github-pages` comes into action.
 It sets a default theme, that injects a css file onto the site.This was causing
