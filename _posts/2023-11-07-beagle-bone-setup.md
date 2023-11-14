@@ -19,13 +19,13 @@ Apart from the Operating System, since it's electronic device it naturally needs
 
 <div class="alert alert-info" role="alert">
 <b>Note: </b>You might be in either of two categories:
-<ul>
-<li>1. You bought the board recently and you are the first one unboxing it.</li>
-<li>2. You had the board already with you, but you don't know what's the state of the board.</li>
+<ol>
+<li>You bought the board recently and you are the first one unboxing it.</li>
+<li>You had the board already with you, but you don't know what's the state of the board.</li>
 We will look into both of these scenarios. The first scenario is definitely very easy, in the second case you would have a lot of learning :)
-</ul>
+</ol>
 </div>
-So in a nutshell you would need the following components:
+Now that we have some idea, lets dig in...
 
 ## Hardware Required
 1. Beagle Bone Black Rev. C Board
@@ -33,7 +33,9 @@ So in a nutshell you would need the following components:
 3. USB to Serial Cable: This can be seen as an optional component. But it's good to have. With a fresh board as upon Linux boot completion a mass storage device enumerated.
 4. Power Adapter 5V 1A or 2A. This is optional, if you are not connecting extra hardware to the board powering it via the USB cable from a PC is A-Okay! I recommend you to start with just the USB cable to check you board is working fine and then move on to power supply. If you have a multimeter you can check the voltage at the DC barrel jack. It should be slightly more than 5V e.g. around 5.3V. This is good, as there would be a slight voltage drop when the bord draws power from it. If you see a voltage less than 5V even without of the board, you should change your power supply.
 
-**Note**: *Low voltage might have erratic effects on the board. If you are seeing your board going nuts, check the input voltage.*
+	<div class="alert alert-info" role="alert">
+	<b>Note: </b> Low voltage might have erratic effects on the board. If you are seeing your board going nuts, check the input voltage.
+	</div>
 
 ## Software Tools
 1. Serial Terminal Software: On windows you can use: Tera Term, Putty, Mobaxterm. I recommend using Tera Term. On Linux you can use minicom. Make sure you configure minicom first. Usually minicom will have Hardware flow control enabled by default. If you are able to see the logs but you can't type anything, check if Hardware flow control is enabled. It should be off.
