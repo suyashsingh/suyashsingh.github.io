@@ -6,10 +6,7 @@ readTime: 10 minute
 tag: [beagle-bone-black, bbb, embedded-systems]
 description: This post is about setting up a beagle bone black board for its first boot.
 post_intro: |
-    Hey there!
-
-	In this post we would be looking on how to setup Beagle Bone Black Rev. C board for the maiden boot. The initial steps would be same irrespective of what you are trying to do with your Beagle Bone Black. Be it learning Embedded Linux or just are exploring beagle board for generic usage such a connecting some sensors and using them via python or C. You need to have a basic hardware setup to get stated. This post help you get up and running as quickly as possible with your Beagle Board.
-Before diving hands on into the configuring your board let's take some time to get an overview of what has to be done.
+ Hey there! In this post we would be looking on how to setup Beagle Bone Black Rev. C board for the maiden boot. The initial steps would be same irrespective of what you are trying to do with your Beagle Bone Black. Be it learning Embedded Linux or just are exploring beagle board for generic usage such a connecting some sensors and using them via python or C. You need to have a basic hardware setup to get stated. This post help you get up and running as quickly as possible with your Beagle Board. Before diving hands on into the configuring your board let's take some time to get an overview of what has to be done.
 
 ---
 
