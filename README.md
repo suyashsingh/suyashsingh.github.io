@@ -37,9 +37,13 @@ bundle exec jekyll serve --host=0.0.0.0
 
 ## Running the local version
 + Instaling Plugins: Add them to `Gemfile` and `_config.yml`.
+Bundle install has to be done else you will get error of missing bundles.
 `bundle install`
 
-+ Serving the site locally:
++ Serving the site locally add host arg with the ip of the system which in in network.
+If you don't add the IP address if you access the site from other pc, you will not be able to access the
+full pages(they will come up as not found.).
+`bundle exec jekyll serve --host=192.168.0.104`
 `bundle exec jekyll serve`
 
 
