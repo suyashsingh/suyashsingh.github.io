@@ -46,6 +46,10 @@ full pages(they will come up as not found.).
 `bundle exec jekyll serve --host=192.168.0.104`
 `bundle exec jekyll serve`
 
+```
+bundle install
+bundle exec jekyll serve
+```
 
 ## Learnings
 1. When a plain jekyll site is deployed on github, `github-pages` comes into action.
