@@ -1,6 +1,6 @@
 title: Suyash's WebSpace
 description: Embedded Bits and Bytes!
 show_downloads: false
-show_github_link: false
+show_github_link: true
 google_analytics:
 theme: jekyll-theme-hacker
